@@ -8,6 +8,5 @@ export function calculateDiscount(price: number, discountCode: string) {
   } else if (discountCode === "SAVE20") {
     discount = 0.2;
   }
-
   return price - price * discount;
 }
