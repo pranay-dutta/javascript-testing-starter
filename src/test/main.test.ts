@@ -6,7 +6,7 @@ describe("calculateDiscount", () => {
     expect(calculateDiscount(0, "")).toMatch(/invalid/i); //not reqiured in ts
   });
   it("should return valid discount", () => {
-    expect(calculateDiscount(10, "SAVE1")).toBe(9);
+    expect(calculateDiscount(10, "SAVE10")).toBe(9);
     expect(calculateDiscount(10, "SAVE20")).toBe(8);
   });
 });
